@@ -92,7 +92,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 14px 0;
-    width: 150px;
+    width: 120px;
     text-align: center;
     border-radius: 15px;
     cursor: pointer;
@@ -103,7 +103,7 @@
     &:hover {
       background: #212040;
       box-shadow: 0 0 10px #546ee4d2;
-      font-size: 1.025rem;
+      font-size: 1.05rem;
     }
     &:active {
       transform: scale(1.05) translateX(-50%);

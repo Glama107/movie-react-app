@@ -83,6 +83,7 @@ const Card = ({ movie }) => {
       storedData.push(movie.id);
       window.localStorage.movies = storedData;
     }
+    alert("Ajouté au favoris!");
   };
 
   const deleteStorage = () => {
@@ -91,6 +92,7 @@ const Card = ({ movie }) => {
     let newData = storedData.filter((id) => id != movie.id);
 
     window.localStorage.movies = newData;
+    alert("Supprimé des favoris!");
   };
 
   return (
@@ -125,7 +127,7 @@ const Card = ({ movie }) => {
 
       {movie.genre_ids ? (
         <div className="btn" onClick={() => addStorage()}>
-          Ajouter aux coups de coeur
+          Afficher les détails
         </div>
       ) : (
         <div
